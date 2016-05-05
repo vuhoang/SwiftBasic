@@ -14,50 +14,41 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8G-22-erH">
-                                <rect key="frame" x="266" y="28" width="68" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="68" id="etI-22-Fa9"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checker_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-IV-Lgt" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="22"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time: 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8G-22-erH">
+                                <rect key="frame" x="173" y="28" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxh-Nb-obe">
-                                <rect key="frame" x="249" y="462" width="102" height="130"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="SU7-Un-SMi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZU-2E-WqN">
-                                <rect key="frame" x="217" y="244" width="167" height="113"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="o15-Tu-pyf"/>
-                                    <constraint firstAttribute="width" constant="167" id="vMf-30-Ckc"/>
-                                </constraints>
-                                <state key="normal" title="Tap me!"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZU-2E-WqN">
+                                <rect key="frame" x="82" y="152" width="250" height="265"/>
+                                <state key="normal" backgroundImage="button_tap_deselected.png"/>
+                                <state key="highlighted" backgroundImage="button_tap_deselected.png"/>
                                 <connections>
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4B-me-rAV"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checker_bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-dT-QKY" userLabel="Button View">
+                                <rect key="frame" x="0.0" y="714" width="414" height="22"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxh-Nb-obe">
+                                <rect key="frame" x="107" y="478" width="200" height="130"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Mxh-Nb-obe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GHV-Qy-6I2"/>
-                            <constraint firstItem="o8G-22-erH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NcV-3l-2nA"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mxh-Nb-obe" secondAttribute="bottom" constant="8" id="VNH-n2-eeZ"/>
-                            <constraint firstItem="nZU-2E-WqN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XRF-Iq-cb5"/>
-                            <constraint firstItem="nZU-2E-WqN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vvb-hB-Ujl"/>
-                            <constraint firstItem="o8G-22-erH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wY7-3C-MQo"/>
-                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="scoreLabel" destination="Mxh-Nb-obe" id="Ol9-cR-M7P"/>
                         <outlet property="timeLabel" destination="o8G-22-erH" id="hU5-Db-2WS"/>
@@ -65,6 +56,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="356" y="256"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_tap_deselected.png" width="250" height="265"/>
+        <image name="checker_bottom.png" width="320" height="23"/>
+        <image name="checker_top.png" width="320" height="22"/>
+    </resources>
 </document>
